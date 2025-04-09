@@ -7,6 +7,7 @@ export const metadata: Metadata = {
 	description: "Racing 21 Transition Web Application",
 	manifest: "/site.webmanifest",
 	themeColor: "#000000",
+	viewport: "width=device-width, initial-scale=1, maximum-scale=1",
 	appleWebApp: {
 		capable: true,
 		statusBarStyle: "default",
@@ -19,8 +20,8 @@ export default function RootLayout({ children, }: Readonly<{
 }>) {
 	return (
 		<html lang="en">
-			<body className={'antialiased'}>
-				<main className={"flex flex-col min-w-[100vw] min-h-[100vh]"}>{children}</main>
+			<body className={'antialiased overflow-x-hidden'}>
+				<main className={"flex flex-col w-full min-h-screen"}>{children}</main>
 			</body>
 		</html>
 	);
