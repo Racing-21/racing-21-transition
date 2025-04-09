@@ -22,7 +22,7 @@ export default function Page() {
 				<h1 className={'text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white'}>Připravujeme pro vás nový web!</h1>
 				<p className={'text-xl sm:text-2xl md:text-3xl font-semibold text-white mt-4'}>Už brzy se můžete těšit na naše webové stránky v novém kabátu.</p>
 			</div>
-			<Footer className={'mt-auto h-[250px] mb-2'} />
+			<Footer className={'mt-auto h-[250px] md:h-[150px] mb-2'} />
 		</div>
 	);
 }
